@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+/* FORMATAÇÃO "RAIZ" DA PÁGINA */
+
+	body {
+		margin: 0;
+		background-image: url("folhas.jpg");
+		background-size: contain;
+		background-color: #F2F2F2;
+	}
+
+	nav a{
+		text-decoration: none;
+		color: white;
+	}
+
+	div#inf ol {
+		padding: 0;
+	}
+
+	div#inf h1 {
+		text-align: center;
+	}
+
+	figcaption#legInicial {
+		position: relative;
+	}
+
+	#inf {
+		font-family: times;
+		text-align: justify;
+	}
+
+/* ---------------------------------------------------------- */
+
+/* FORMATAÇÃO DO CABEÇALHO E RODAPÉ */
+
+			/*CABEÇALHO*/
+	.link:hover, .link:active { 
+		background-color: #036208;
+	}
+
+	#cabecalho {
+		margin: 0;
+		border: 0;
+		background-color: #027023;
+	}
+
+	#cabecalho2 {
+		overflow: hidden;
+		margin: 0;
+		border: 0;
+		background-color: #03C720;
+	}
+			/*---------*/
+
+	.caberoda {
+		transition: background-color 1s;
+	} /*  Essa classe interfere tanto no cabeçalho quanto no rodapé  */
+
+	.caberoda:hover {
+		text-decoration: underline;
+	} /*  Essa classe interfere tanto no cabeçalho quanto no rodapé  */
+
+			/*RODAPÉ*/
+	.roda:hover, .roda:active {
+		background-color: #5F5D5D;
+	}
+
+	#rodape {
+		overflow: hidden;
+		margin: 0;
+		border: 0;
+		background-color: #272827;
+		bottom: 0;
+	}
+			/*------*/
+
+/* ---------------------------------------------------------- */
+
+/* FORMATAÇÃO DO FORMULÁRIO DE CONTATO */
+
+	div#formcomuni textarea {
+		resize: none;
+	}
+
+	div#formcomuni fieldset {
+		background-color: #F2F2F2;
+		border: solid black 1px;
+		border-radius: 12px;
+	}
+
+	div#formcomuni legend {
+		padding: 6px;
+		background-color: white;
+		border: solid black 2px;
+		border-radius: 6px;
+	}
+
+	.linkcomuni, .linkcomuni:link, .linkcomuni:visited {
+		color: black;
+	}
+
+	.linkcomuni:hover, .linkcomuni:active {
+		text-decoration: underline;
+	}
+
+	#msgsucesso {
+		background-color: #F2F2F2;
+		border: solid black 2px;
+		text-align: center;
+		font-family: times;
+		border-radius: 12px;
+	}
+
+/* ---------------------------------------------------------- */
+
+/* FORMATAÇÃO DA PÁGINA PROJ.HTML */
+
+	.graf {
+		text-align: center;
+	}
+
+	#linkproj, #linkproj:link, #linkproj:visited {
+		color: blue;
+	}
+
+	#linkproj:hover , #linkproj:active {
+		color: red;
+	}
+
+/* ---------------------------------------------------------- */
+
+/* FORMATAÇÃO DAS IMAGENS */
+
+	#imgInicial {
+		position: relative;
+	}
+
+/* ---------------------------------------------------------- */
+
+@media (min-width: 931px){
+
+	/* FORMATAÇÃO "RAÍZ" DA PÁGINA */
+
+		div#inf h1 {
+			margin-top: 7%;
+		}
+
+		div#inf h4 {
+			margin-left: 3%;
+		}
+
+		div#inf li {
+			margin-left: 3.5%;
+		}
+
+		#inf {
+			margin: 2% 20% 2% 16%; 
+			font-size: 102%;
+		}
+
+		.texto {
+			margin-left: 2.5%;
+			text-indent: 3%;
+		}
+
+	/* ------------------------------------------ */
+
+	/* FORMATAÇÃO DO CABEÇALHO E RODAPÉ */
+
+				/*CABEÇALHO*/
+		.link:link, .link:visited, .link {
+			padding: 1.05% 2%;
+		}
+
+		#cabecalho {
+			padding: 1.2%;
+			padding-left: 2%;
+		}
+
+		#cabecalho2 {
+			font-size: 120%;
+			padding-top: 1%;
+			padding-bottom: 1%;
+		}
+				/*---------*/
+
+				/*RODAPÉ*/
+		.roda:link, .roda:visited, .roda{
+			padding: 1.54% 2%;
+		}
+
+
+		#rodape {
+			padding-top: 1.5%;
+			padding-bottom: 1.5%;
+		}
+				/*------*/
+
+	/* ------------------------------------------ */
+
+	/* FORMATAÇÃO DO FORMULÁRIO DE CONTATO */
+
+		div#formcomuni fieldset {
+			margin: 10% 35%;
+		}
+		
+		.linkcomuni, .linkcomuni:link, .linkcomuni:visited {
+			padding: 1.5% 2%;
+		}
+
+		#msgsucesso {
+			margin: 7% 35%;
+			font-size: 115%;
+		}
+
+	/* ------------------------------------------ */	
+
+	/* FORMATAÇÃO DA PÁGINA PROJ.HTML */
+
+		.graf {
+			margin: 0% 10%;
+		}
+
+		.grafimg {
+			margin-left: 34%;
+			margin-bottom: 3%;
+			width: 30%;
+			height: 30%;
+		}
+
+	/* ------------------------------------------ */
+
+	/* FORMATAÇÃO DAS IMAGENS */
+
+		#logo {
+			width: 34%;
+			height: 100%;
+		}
+
+		#imgInicial {
+			width: 70%;
+			height: 100%;
+			left: 15.5%;
+		}
+
+		#legInicial {
+			left: 15.5%;
+		}
+
+	/* ------------------------------------------ */
+
+}
+
+@media (max-width: 930px){
+
+	/* FORMATAÇÃO "RAÍZ" DA PÁGINA */
+
+		figcaption {
+			font-size: 60%;
+		}
+
+		div#inf li {
+			margin-left: 0%;
+			font-size: 75%;
+		}
+
+		div#inf h1 {
+			margin-top: 13%;
+			font-size: 140%;
+		}
+
+		div#inf h3 {
+			font-size: 100%;
+			text-align: initial;
+		}
+
+		div#inf h4 {
+			margin-left: 3%;
+			text-align: initial;
+		}
+
+		.texto {
+			margin-left: 2.5%;
+			text-indent: 3%;
+			font-size: 75%;
+		}
+
+		#inf {
+			margin: 2% 8% 2% 8%; 
+			font-size: 102%;
+		}
+
+	/* ------------------------------------------ */
+
+	/* FORMATAÇÃO DO CABEÇALHO E RODAPÉ */
+		
+			/*CABEÇALHO*/
+		.link:link, .link:visited, .link {
+			padding: 4.5% 2% 3.5% 2%;
+			font-size: 60%;
+		}
+
+		#cabecalho {
+			padding: 4%;
+			padding-left: 2%;
+		}
+
+		#cabecalho2 {
+			font-size: 120%;
+			padding-top: 2%;
+			padding-bottom: 2.8%;
+		}
+			/*---------*/
+		
+			/*RODAPÉ*/
+		.roda:link, .roda:visited, .roda{
+			padding: 4% 4% 3.5% 4%;
+			font-size: 60%;
+		}
+
+		#rodape {
+			padding-top: 2.5%;
+			padding-bottom: 3%;
+		}			
+			/*------*/
+	
+	/* ------------------------------------------ */
+
+	/* FORMATAÇÃO DO FORMULÁRIO DE CONTATO */
+	
+		div#formcomuni fieldset {
+			margin: 10% 10% 10% 7%; 
+		}
+
+		div#formcomuni legend  {
+			font-size: 85%;
+		}
+
+		div#formcomuni label {
+			font-size: 75%;
+		}
+
+		.linkcomuni, .linkcomuni:link, .linkcomuni:visited {
+			padding: 1.5% 2%;
+		}
+
+		#msgsucesso {
+			margin: 7% 35%;
+			font-size: 115%;
+		}
+		
+	/* ------------------------------------------ */
+
+	/* FORMATAÇÃO DA PÁGINA PROJ.HTML */
+	
+		.graf {
+			margin: 0% 10%;
+		}
+
+		.grafimg {
+			margin-left: 23.5%;
+			margin-bottom: 3%;
+			width: 50%;
+			height: 50%;
+		}
+
+		#linkproj {
+			padding: 5%;
+		}
+		
+	/* ------------------------------------------ */
+
+	/*FORMATAÇÃO DAS IMAGENS*/
+
+		#logo {
+			width: 60%;
+			height: 100%;
+		}
+
+		#imgInicial {
+			width: 99%;
+			height: 55.65%;
+			
+		}
+
+	/* ------------------------------------------ */
+
+}
